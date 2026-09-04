@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de inscripción</h1>
+    <form action="index.html">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" />
+        <br/>
+        <label for="correo">Correo Electrónico</label>
+        <input type="text" id="correo" name="correo" />
+        <br/>
+        <label for="codigo">Código</label>
+        <input type="text" id="codigo" name="codigo" required>
+        <br/>
+        <label for="carrera">Carrera:</label>
+        <select id="carrera" name="carrera" required>
+            <option value="">Seleccione una carrera</option>
+            <option value="sistemas">Ingeniería de Sistemas</option>
+            <option value="civil">Ingeniería Civil</option>
+            <option value="industrial">Ingeniería Industrial</option>
+        </select>
+        <p>Modalidad de entrega preferida:</p>
+        <input type="radio" id="modalidad" name="entrega">
+        <label for="presencial">Presencial</label>
+        <input type="radio" id="domicilio" name="entrega">
+        <label for="domicilio">Domicilio</label>
+        <br/>
+        <input type="checkbox" id="acepto" name="acepto" required>
+        <label for="acepto">
+            Acepto los términos y condiciones. 
+        </label>
+        <br/>
+        <br/>
+        <br/>
+        <button type="submit">
+            Enviar !!
+        </button>
+    </form>
+
+</body>
+</html>
